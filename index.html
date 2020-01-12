@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Motoscity</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.scss">
+	<link rel="stylesheet" href="css/video/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body class="main-body">
+	<div class="main">
+		<header id="header-intro" class="a">
+			<div id="header-title">
+				<div style="background-color: #a55450; height: 22px;">
+					&nbsp;
+				</div>
+				<div class="row" style="padding-left: 20px;">
+					<div class="col-md-3">
+						<div style="background:#ffffff81; padding: 5px; margin:5px; text-align: center;"><img
+								style="width: 60%; height: auto;" src="img/new-logo.png" alt=""></div>
+					</div>
+					<div class="col-md-5 header-address">
+						<div class="header-title-address">
+							<div>Av. Venustiano Carranza loc. 5 s/n,</div>
+							<div>Col. Santiago Teyahualco,</div>
+							<div>C.P. 54980, Tultepec Estado de México.</div>
+							<div>
+								<span>55-65-86-88-72</span>&nbsp;<small>(local),</small>&nbsp;<span>55-73-61-16-23</span>&nbsp;<small>(celular)</small>
+							</div>
+							<div><a style="color: #ffffffec;"
+									href="mailto:motoscity@motoscity.com">motoscity@motoscity.com</a></div>
+						</div>
+					</div>
+					<div class="col-md-4 header-address">
+						<div class="header-title-address">
+							<div>Av. 2 de marzo #5,</div>
+							<div>Col. barrio san martín</div>
+							<div>Tultepec Estado de México.</div>
+							<div><span>55-43-47-24-85,</span>&nbsp;<span>56-11-55-85-95</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section id="intro" class="home-video text-light">
+			<div class="home-video-wrapper">
+				<div class="homevideo-container">
+					<div id="P1" class="bg-player" style="display:block; margin: auto; background: rgba(0,0,0,0.5)"
+						data-property="{videoURL:'https://youtu.be/eS7275SaSC8',containment:'.homevideo-container', quality: 'hd720', showControls: false, autoPlay:true, mute:true, startAt:0, opacity:1}">
+					</div>
+				</div>
+				<div class="overlay">
+					<div class="text-center video-caption">
+						<div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.8s">
+							<h1 class="big-heading font-light" style="text-shadow: 5px 5px 0 #000000b3;"><span
+									id="js-rotating">estándares altos de atención, servicio e innovación, enfocado en la
+									calidad, satisfacción y necesidades de nuestros clientes, inspirada en los sueños,
+									dedicación y pasión de los que integramos esta sociedad.</span></h1>
+						</div>
+						<div class="wow bounceInUp" data-wow-offset="0" data-wow-delay="1s">
+							<br><br><br><br><br><br>
+							<div>
+								<a href="#about" class="iniciar" id="btn-scroll">INICIAR</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="navigation"></div>
+		<section id="page-main">
+			<section style="height: 150px;">&nbsp;</section>
+			<section class="section-table">
+				<div class="section-row">
+					<div class="section-cell-menu">
+						<div class="servicios-main">
+							<div class="main-title" style="margin-top: 4px;">
+								<div class="item-menu"><a id="btnMenuInicio">INICIO</a></div>
+							</div>
+							<div class="main-title" style="margin-top: 4px;">
+								<div class="item-menu"><a id="btnMenuVentas">VENTAS</a></div>
+							</div>
+							<div class="body-title" style="margin-top: 4px;">
+								<div style="margin-top: 4px;"><a
+										onclick="setServicio(servicioTypeEnum.Servicios)">SERVICIOS</a></small></div>
+								<div>&nbsp;&nbsp;<small><a
+											onclick="setServicio(servicioTypeEnum.Matenimiento)">MANTENIMIENTO</a></small>
+								</div>
+								<div>&nbsp;&nbsp;<small><a
+											onclick="setServicio(servicioTypeEnum.Servicio)">SERVICIO</a></small></div>
+								<div>&nbsp;&nbsp;<small><a
+											onclick="setServicio(servicioTypeEnum.Ajustes)">AJUSTES</a></small></div>
+								<div>&nbsp;&nbsp;<small><a
+											onclick="setServicio(servicioTypeEnum.HojalateriaPintura)">HOJALATERIA Y
+											PINTURA</a></small></div>
+								<div>&nbsp;&nbsp;<small><a
+											onclick="setServicio(servicioTypeEnum.Modificaciones)">MODIFICACIONES</a></small>
+								</div>
+								<div>&nbsp;&nbsp;<small><a
+											onclick="setServicio(servicioTypeEnum.Diagnostico)">DIAGNOSTICO</a></small>
+								</div>
+							</div>
+							<div class="main-title" style="margin-top: 4px;">
+								<div><a id="btnMenuNosotros">NOSOTROS</a></div>
+							</div>
+
+							<div class="main-title" style="margin-top: 4px;">
+								<div><a id="btnMenuAccesorios">ACCESORIOS</a></div>
+							</div>
+							<div class="main-title" style="margin-top: 4px;">
+								<div><a id="btnMenuRefacciones">REFACCIONES</a></div>
+							</div>
+
+							<div class="main-title" style="margin-top: 4px;">
+								<div><a id="btnMenuMap">UBICACION</a></div>
+							</div>
+							<div class="main-title" style="margin-top: 4px;">
+								<div><a id="btnMenuContactanos">CONTACTANOS</a></div>
+							</div>
+							<br>
+						</div>
+					</div>
+					<div class="section-cell-content">
+						<section id="section-main">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="vento-box">
+										<div class="vento-title"><strong>CENTRO DE SERVICIO AUTORIZADO</strong></div>
+										<div>
+											<div class="row">
+												<div class="col-md-6 text-right">
+													<img class="vento-img" src="img/vento65.png" alt="vento">
+												</div>
+												<div class="col-md-6 text-left">
+													<img class="veloci-img" src="img/logo_veloci.png" alt="veloci">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12" style="margin-bottom: 0px;">
+									<div class="servicio-title2">Contamos con sistema de facturación.</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="servicio-title3">SERVICIO ESPECIALIZADO A EMPRESAS</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3" style="margin-top: 15px;">
+									<img class="img" src="img/vento2.png" alt="">
+								</div>
+								<div class="col-md-3" style="margin-top: 15px;">
+									<img class="img" src="img/ventoref4.png" alt="">
+								</div>
+								<div class="col-md-3 img" style="margin-top: 15px;">
+									<img class="img" src="img/vento4.png" alt="">
+								</div>
+								<div class="col-md-3 img" style="margin-top: 15px;">
+									<img class="img" src="img/ventoref2.png" alt="">
+								</div>
+							</div>
+						</section>
+						<section id="section-map" style="display: none; margin-top: 10px;">
+							<div class="row p-2">
+								<div class="col-md-6">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d939.3223099939869!2d-99.12528587083644!3d19.657661799172313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f511fbc93c95%3A0x75990de18a412bf8!2sMotoscity+taller+de+motocicletas!5e0!3m2!1ses!2smx!4v1547315078172"
+										width="97%" height="300" frameborder="0" style="border:0"
+										allowfullscreen></iframe>
+								</div>
+								<div class="col-md-6">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.9204258831887!2d-99.12939945895002!3d19.67339998874152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f4f6994f1a61%3A0x61c6fdd19d7ccb91!2sAv.%202%20de%20Marzo%205%2C%20San%20Martin%2C%2054960%20Tultepec%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1578783656878!5m2!1ses-419!2smx"
+										width="97%" height="300" frameborder="0" style="border:0"
+										allowfullscreen></iframe>
+								</div>
+							</div>
+						</section>
+						<section id="section-servicio" class="back-main" style="display: none;">
+							<div class="servicio-title" id="modalCenterTitle"></div>
+							<div class="servicio-content" id="modalCenterBody"></div>
+						</section>
+						<section id="section-ventas" class="back-main" style="display: none;">
+							<div class="servicio-title">VENTAS</div>
+							<div class="servicio-content text-center">
+								<h3>LOS MEJORES PRECIOS SOLO EN MOTOSCITY</h3>
+								<p>la tasa más baja, enganche mínimo</p>
+								<p>pago a crédito, o, de contado</p>
+								<p>sistema de apartado</p>
+								<div class="p-2">
+									<div>aceptamos todas las tarjetas</div>
+									<div class="pt-2"><img src="./img/tarjetas.jpeg" alt="tarjetas" style="height: 50px; width: auto;"></div>
+								</div>
+							</div>
+						</section>
+						<section id="section-servicios" class="back-main" style="display: none;">
+							<div class="servicio-title">Servicios</div>
+							<div class="servicio-content">
+								<p>
+									Somos una empresa con el nivel multitécnico, en el que nos especializamos en todo
+									tipo de diagnósticos y reparaciones para todas las marcas.
+								</p>
+								<div class="row">
+									<div class="col-md-3">
+										<div class="marca"><img src="img/carabela1.png" alt="carabela"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/honda.png" alt="honda"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/italika.png" alt="italika"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/kawasaki.png" alt="kawasaki"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<div class="marca"><img src="img/kurazai.png" alt="kurazai"> </div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/susuki.png" alt="susuki"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/veloci.png" alt="veloci"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/yamaha.png" alt="yamaha"></div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section id="section-nostros" style="display: none; margin-top: 10px;">
+							<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="block1">
+													<div class="text-center"><strong>MISIÓN</strong></div>
+													<br>
+													<div class="text-justify">
+														Somos un centro de atención con estándares altos, en servicio e
+														innovación, enfocado en la calidad, satisfacción y necesidades
+														de nuestros clientes, inspirada en los sueños, dedicación y
+														pasión de los que integramos esta sociedad.
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="block2">
+													<div class="text-center"><strong>VISIÓN</strong></div>
+													<br>
+													<div class="text-justify">
+														Ser líderes en soluciones integrales y profesionales, en
+														nuestros servicios como reparaciones mantenimientos venta de
+														refacciones, en beneficio de nuestros clientes a través de la
+														mejora continua y un espíritu de actualización y modernización
+														constante.
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="block3">
+													<div class="text-center"><strong>VALORES</strong></div>
+													<br>
+													<div class="text-left">
+														<strong>RESPETO:</strong> Escucha, acepta y comprende la
+														diversidad. <br>
+														<strong>HONESTIDAD:</strong> Decir la verdad y actuar con
+														rectitud. <br>
+														<strong>LEALTAD:</strong> Fidelidad entre todos los que
+														intervenimos en las actividades. <br>
+														<strong>RESPONSABILIDAD:</strong> Hacer de forma excepcional lo
+														que nos corresponde. <br>
+														<strong>INTEGRIDAD:</strong> Congruencia entre lo que dices y
+														las acciones que tomas. <br>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="carousel-caption d-none d-md-block">
+										</div>
+									</div>
+									<div class="carousel-item active">
+										<div class="organigrama">
+											<img class="organigrama" src="img/nuevo-organigrama.png" alt="">
+										</div>
+										<div class="carousel-caption d-none d-md-block">
+										</div>
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+									data-slide="prev" style="text-align: left;">
+									<span class="carousel-control-prev-icon" aria-hidden="true"
+										style="background-color: black; padding: 16px; vertical-align: bottom;"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleControls" role="button"
+									data-slide="next" style="text-align: right;">
+									<span class="carousel-control-next-icon" aria-hidden="true"
+										style="background-color: black; padding: 16px; vertical-align: bottom;"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</section>
+						<section id="section-accesorios" class="back-main" style="display: none;">
+							<div class="servicio-title">Accesorios</div>
+							<div class="servicio-content">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="marca"><img src="img/azul-rojo.png" alt="azul-rojo"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/casco-calavera.png" alt="casco-calavera"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/blanco-rojo.png" alt="blanco-rojo"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/blanco3.png" alt="blanco3"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<div class="marca"><img src="img/casco-blanco.png" alt="casco-blanco"> </div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/casco-azul.png" alt="casco-azul"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/casco-gris.png" alt="casco-gris"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/casco-nema.png" alt="casco-nema"></div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section id="section-contactanos" class="back-main" style="display: none; margin-top: 10px;">
+							<div class="contactanos">
+								<div><strong>CONTACTANOS</strong></div>
+								<br>
+								<p>Horario de atención:<br> Lunes a viernes 9:00 am a 7:00 pm y <br>sabado 9:00 am a
+									3:00 pm.</p>
+								<p>Teléfonos Teyahualco: <br> 55-65-86-88-72, Cel: 55-73-61-16-23</p>
+								<p>Teléfonos 2 de marzo: <br> 55-43-47-24-85, 56-11-55-85-95</p>
+								<p><a class="text-white"
+										href="mailto:motoscity@motoscity.com">motoscity@motoscity.com</a></p>
+								<p><a class="text-white" href="mailto:facturas@motoscity.com">facturas@motoscity.com</a>
+								</p>
+							</div>
+						</section>
+						<section id="section-refacciones" class="back-main" style="display: none;">
+							<div class="servicio-title">Refacciones</div>
+							<div class="servicio-content">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="marca"><img src="img/amortiguadores.png" alt="amortiguadores"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/balatas.png" alt="balatas"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/baleros.png" alt="baleros"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/cilindro.png" alt="cilindro"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<div class="marca"><img src="img/disco-freno.png" alt="disco-freno"> </div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/foco.png" alt="foco"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/calavera.png" alt="calavera"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="marca"><img src="img/filtro.png" alt="filtro"></div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section id="section-contactanos" class="back-main" style="display: none; margin-top: 10px;">
+							<div class="contactanos">
+								<div><strong>CONTACTANOS</strong></div>
+								<br>
+								<p>Horario de atención:<br> Lunes a viernes 9:00 am a 7:00 pm y <br>sabado 9:00 am a
+									3:00 pm.</p>
+								<p>Teléfonos Teleyualco: <br> 55-65-86-88-72, Cel: 55-73-61-16-23</p>
+								<p>Teléfonos 2 de marzo: <br> 55-43-47-24-85, 56-11-55-85-95</p>
+								<p><a class="text-white"
+										href="mailto:motoscity@motoscity.com">motoscity@motoscity.com</a></p>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+		</section>
+		<footer class="footer-main">
+			<div class="row">
+				<div class="col-md-5">
+					<strong>Motoscity</strong> <br>
+					Centro de servicio autorizado Vento - Teyahualco<br>
+					Centro de servicio autorizado Veloci - 2 de marzo<br>
+					Omar Delgado García <br> <small>Fundador y relaciones públicas.</small>
+				</div>
+				<div class="col-md-3">
+					<a href="https://www.facebook.com" target="_black"><img src="img/facebook.png" alt=""></a>
+				</div>
+				<div class="col-md-4" style="text-align: right;">
+					derechos reservados Motoscity<br>
+					Reparación, servicio y mantenimiento de motocicletas <br>
+					<small>creado por diego.pedroza@capetisoft.com</small>
+				</div>
+			</div>
+		</footer>
+
+		<header id="header-title-mobile">
+			<div class="header-mobile-logo">
+				<img style="background:#ffffff81; padding: 5px; margin:5px; text-align: center;" class="logo-img-mobil"
+					style="width: 60%; height: auto;" src="img/new-logo.png" alt="Motoscity">
+			</div>
+		</header>
+		<section id="page-main-mobile">
+			<div id="menu-mobile-icon">
+				<img src="img/menu.png" alt="menu">
+			</div>
+			<nav id="menu-mobile">
+				<div><strong>MENU</strong></div>
+				<ul>
+					<li><a href="#header-title-mobile" onclick="hideMenu()">Inicio</a></li>
+					<li><a href="#menu-ventas" onclick="hideMenu()">Ventas</a></li>
+					<li><a href="#menu-servicios" onclick="hideMenu()">Servicios</a></li>
+					<li><a href="#menu-matenimiento" onclick="hideMenu()">Matenimiento</a></li>
+					<li><a href="#menu-servicio" onclick="hideMenu()">Servicio</a></li>
+					<li><a href="#menu-ajustes" onclick="hideMenu()">Ajustes</a></li>
+					<li><a href="#menu-hojalateria-pintura" onclick="hideMenu()">Hojalatería y pintura</a></li>
+					<li><a href="#menu-modificaciones" onclick="hideMenu()">Modificaciones</a></li>
+					<li><a href="#menu-diagnostico" onclick="hideMenu()">Diagnostico</a></li>
+					<li><a href="#menu-nosotros" onclick="hideMenu()">Nosotros</a></li>
+					<li><a href="#menu-accesorios" onclick="hideMenu()">Accesorios</a></li>
+					<li><a href="#menu-refacciones" onclick="hideMenu()">Refacciones</a></li>
+					<li><a href="#menu-ubicacion" onclick="hideMenu()">Ubicación</a></li>
+					<li><a href="#menu-contacto" onclick="hideMenu()">Contacto</a></li>
+					<li><a href="#menu-cerrar" onclick="hideMenu()">Cerrar</a></li>
+				</ul>
+			</nav>
+			<div class="header-title-address-mobil">
+				<div>Av. Venustiano Carranza loc. 5 s/n,</div>
+				<div>Col. Santiago Teyahualco,</div>
+				<div>C.P. 54980, Tultepec Estado de México.</div>
+				<div><span>55-65-86-88-72</span>&nbsp;<small>(local)</small></div>
+				<div><span>55-73-61-16-23</span>&nbsp;<small>(celular)</small></div>
+				<div><a style="color: #ffffffec;" href="mailto:motoscity@motoscity.com">motoscity@motoscity.com</a>
+				</div>
+			</div>
+			<div class="header-title-phones-mobil">
+				<div>Av. 2 de marzo #5,</div>
+				<div>Col. barrio san martín</div>
+				<div>Tultepec Estado de México.</div>
+				<div><span>55-43-47-24-85</span></div>
+				<div><span>56-11-55-85-95</span></div>
+			</div>
+			<div class="vento-box">
+				<div class="vento-title"><strong>CENTRO DE SERVICIO AUTORIZADO</strong></div>
+				<div><img class="vento-img" src="img/vento65.png" alt="vento"></div>
+				<div><img class="veloci-img" src="img/logo_veloci.png" alt="veloci"></div>
+			</div>
+			<div class="servicio-title2">Contamos con sistema de facturación.</div>
+			<div class="servicio-title3" style="text-align:center;">CONTAMOS CON SERVICIO ESPECIALIZADO A EMPRESAS</div>
+			<div id="menu-ventas" class="section-nosotros-mobil-title">
+				<strong>VENTAS</strong>
+			</div>
+			<div class="servicio-title2 text-center m-0">
+				<strong class="p-4">LOS MEJORES PRECIOS SOLO EN MOTOSCITY</strong>
+				<p class="p-2">la tasa más baja, enganche mínimo</p>
+				<p>pago a crédito, o, de contado</p>
+				<p>sistema de apartado</p>
+				<div class="p-2">
+					<div>aceptamos todas las tarjetas</div>
+					<div class="pt-4"><img src="./img/tarjetas.jpeg" alt="tarjetas" style="height: 50px; width: auto;"></div>
+				</div>
+			</div>
+			<div id="menu-servicios" class="section-nosotros-mobil-title ">
+				<strong>SERVICIOS</strong>
+			</div>
+			<div style="text-align: justify; margin-top: 0px;" class="servicio-title2">
+				Somos una empresa con el nivel multitécnico, en el que nos especializamos en todo tipo de diagnósticos y
+				reparaciones para todas las marcas.
+			</div>
+			<div class="marca-content">
+				<div class="marca"><img src="img/carabela1.png" alt="carabela"></div>
+				<div class="marca"><img src="img/honda.png" alt="honda"></div>
+				<div class="marca"><img src="img/italika.png" alt="italika"></div>
+				<div class="marca"><img src="img/kawasaki.png" alt="kawasaki"></div>
+				<div class="marca"><img src="img/kurazai.png" alt="kurazai"> </div>
+				<div class="marca"><img src="img/susuki.png" alt="susuki"></div>
+				<div class="marca"><img src="img/veloci.png" alt="veloci"></div>
+				<div class="marca"><img src="img/yamaha.png" alt="yamaha"></div>
+			</div>
+			<div id="menu-matenimiento" class="servicio-title-mobil">
+				<strong>Mantenimiento</strong>
+			</div>
+			<div style="text-align: justify; margin-top: 0px;" class="servicio-title2">
+				Revisamos los niveles de aceite, líquidos de frenos, el estado de bujía, analizamos el kit de arrastre
+				(cadena y estrellas) y revisión del sistema eléctrico.
+			</div>
+			<div id="menu-servicio" class="servicio-title-mobil">
+				<strong>Servicio</strong>
+			</div>
+			<div style="text-align: justify; margin-top: 0px;" class="servicio-title2">
+				Damos servicio de afinación, se hace limpieza en el carburador, cambio de bujías y el aceite, cambio de
+				filtro y realizamos una revisión en general.
+			</div>
+			<div id="menu-ajustes" class="servicio-title-mobil">
+				<strong>Ajustes</strong>
+			</div>
+			<div style="text-align: justify; margin-top: 0px;" class="servicio-title2">
+				Medio ajuste: el cuál incluye cambio de cilindro, pistón y anillo, cambio de válvulas, cambio de cadena
+				o distribución y varillas. <br> Ajuste completo: el cual incluye el cambio de cilindro, pistón y anillo,
+				cambio de válvulas, cambio de cadena o distribución cambio de varillas y cambio del cigueñal.
+			</div>
+			<div id="menu-hojalateria-pintura" class="servicio-title-mobil">
+				<strong>Hojalateria y Pintura</strong>
+			</div>
+			<div style="text-align: justify; margin-top: 0px;" class="servicio-title2">
+				Hacemos reparaciones de daños de cualquier magnitud, que van desde pequeños rayones y golpes hasta
+				choques severos, también hacemos reparaciones con fibra de vidrio, pintado de cuadros y baños de
+				pintura. Utilizamos las mejores pinturas, con ingredientes de alta calidad, que garantizan mayor
+				protección.
+			</div>
+			<div id="menu-modificaciones" class="servicio-title-mobil">
+				<strong>Modificaciones</strong>
+			</div>
+			<div style="text-align: justify; margin-top: 0px;" class="servicio-title2">
+				Realizamos alargamiento de scooter, recorremos la llanta trasera, levantamos la moto, realizamos
+				modificaciones para cualquier tipo de moto o marca, al gusto del cliente.
+			</div>
+			<div id="menu-diagnostico" class="servicio-title-mobil">
+				<strong>Diagnostico</strong>
+			</div>
+			<div style="text-align: justify; margin-top: 0px;" class="servicio-title2">
+				Revisamos y diagnosticamos cualquier falla eléctrica y mecánica al momento.
+			</div>
+			<div id="menu-nosotros" class="section-nosotros-mobil-title ">
+				<strong>NOSOTROS</strong>
+			</div>
+			<div class="employee" style="padding-top: 20px; padding-bottom: 20px; ">
+				<img src="img/nuevo-organigrama.png" alt="" class="employee">
+			</div>
+			<div class="block1">
+				<div class="text-center"><strong>MISIÓN</strong></div>
+				<br>
+				<div class="text-justify">
+					Somos un centro de atención con estándares altos, en servicio e innovación, enfocado en la calidad,
+					satisfacción y necesidades de nuestros clientes, inspirada en los sueños, dedicación y pasión de los
+					que integramos esta sociedad.
+				</div>
+			</div>
+			<div class="block2">
+				<div class="text-center"><strong>VISIÓN</strong></div>
+				<br>
+				<div class="text-justify">
+					Ser líderes en soluciones integrales y profesionales, en nuestros servicios como reparaciones
+					mantenimientos venta de refacciones, en beneficio de nuestros clientes a través de la mejora
+					continua y un espíritu de actualización y modernización constante.
+				</div>
+			</div>
+			<div class="block3">
+				<div class="text-center"><strong>VALORES</strong></div>
+				<br>
+				<div class="text-left">
+					<strong>RESPETO:</strong> Escucha, acepta y comprende la diversidad. <br>
+					<strong>HONESTIDAD:</strong> Decir la verdad y actuar con rectitud. <br>
+					<strong>LEALTAD:</strong> Fidelidad entre todos los que intervenimos en las actividades. <br>
+					<strong>RESPONSABILIDAD:</strong> Hacer de forma excepcional lo que nos corresponde. <br>
+					<strong>INTEGRIDAD:</strong> Congruencia entre lo que dices y las acciones que tomas. <br>
+				</div>
+			</div>
+
+			<div id="menu-accesorios" class="section-nosotros-mobil-title ">
+				<strong>ACCESORIOS</strong>
+			</div>
+			<div class="marca-content">
+				<div class="marca"><img src="img/azul-rojo.png" alt="azul-rojo"></div>
+				<div class="marca"><img src="img/casco-calavera.png" alt="casco-calavera"></div>
+				<div class="marca"><img src="img/blanco-rojo.png" alt="blanco-rojo"></div>
+				<div class="marca"><img src="img/blanco3.png" alt="blanco3"></div>
+				<div class="marca"><img src="img/casco-blanco.png" alt="casco-blanco"> </div>
+				<div class="marca"><img src="img/casco-azul.png" alt="casco-azul"></div>
+				<div class="marca"><img src="img/casco-gris.png" alt="casco-gris"></div>
+				<div class="marca"><img src="img/casco-nema.png" alt="casco-nema"></div>
+			</div>
+
+			<div id="menu-refacciones" class="section-nosotros-mobil-title ">
+				<strong>REFACCIONES</strong>
+			</div>
+			<div class="marca-content">
+				<div class="marca"><img src="img/amortiguadores.png" alt="amortiguadores"></div>
+				<div class="marca"><img src="img/balatas.png" alt="balatas"></div>
+				<div class="marca"><img src="img/baleros.png" alt="baleros"></div>
+				<div class="marca"><img src="img/cilindro.png" alt="cilindro"></div>
+				<div class="marca"><img src="img/disco-freno.png" alt="disco-freno"> </div>
+				<div class="marca"><img src="img/foco.png" alt="foco"></div>
+				<div class="marca"><img src="img/calavera.png" alt="calavera"></div>
+				<div class="marca"><img src="img/filtro.png" alt="filtro"></div>
+			</div>
+
+			<div id="menu-ubicacion" class="section-nosotros-mobil-title ">
+				<strong>UBICACION</strong>
+			</div>
+			<div style="text-align: center; margin-top: 0px;" class="servicio-title2">
+				<div class="row">
+					<div class="col-md-6">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1878.6446176357458!2d-99.124739!3d19.657662!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x75990de18a412bf8!2sMotoscity+taller+de+motocicletas!5e0!3m2!1ses!2smx!4v1548109077148"
+							width="97%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-6">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.9204258831887!2d-99.12939945895002!3d19.67339998874152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f4f6994f1a61%3A0x61c6fdd19d7ccb91!2sAv.%202%20de%20Marzo%205%2C%20San%20Martin%2C%2054960%20Tultepec%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1578783656878!5m2!1ses-419!2smx"
+							width="97%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div id="menu-contacto" class="section-nosotros-mobil-title ">
+				<strong>CONTACTANOS</strong>
+			</div>
+			<div style="text-align: center; margin-top: 0px;" class="servicio-title2">
+				<p>Horario de atención:<br> Lunes a viernes 9:00 am a 7:00 pm y <br>sabado 9:00 am a 3:00 pm.</p>
+				<p>Teléfonos Teyahualco: <br> 55-65-86-88-72, Cel: 55-73-61-16-23</p>
+				<p>Teléfonos 2 de marzo: <br> 55-43-47-24-85, 56-11-55-85-95</p>
+				<p><a class="text-white" href="mailto:motoscity@motoscity.com">motoscity@motoscity.com</a></p>
+				<p><a class="text-white" href="mailto:facturas@motoscity.com">facturas@motoscity.com</a></p>
+			</div>
+		</section>
+		<footer class="footer-mobile">
+			<div class="footer-section">
+				<a href="https://www.facebook.com" target="_black"><img src="img/facebook.png" alt=""></a>
+			</div>
+			<div class="footer-section">
+				<strong>Motoscity</strong> <br>
+				Centro de servicio autorizado Vento <br> Teyahualco<br>
+				Centro de servicio autorizado Veloci <br> 2 de Marzo<br>
+				Omar Delgado García <br> <small>Fundador y relaciones públicas.</small>
+			</div>
+			<div class="footer-section">
+				derechos reservados Motoscity<br>
+				Reparación, servicio y mantenimiento de motocicletas <br>
+				<small>creado por diego.pedroza@capetisoft.com</small>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/slippry.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/morphext.min.js"></script>
+	<script src="js/jquery.mb.YTPlayer.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/jquery.appear.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+		crossorigin="anonymous"></script>
+	<script>
+		$("#menu-mobile").on("mouseleave", function () {
+			hideMenu();
+		});
+		$("#menu-mobile-icon").click(function () {
+			$("#menu-mobile").show();
+		});
+		$("#btnNosotros").click(function () {
+			$("#menu-main").hide("slow");
+			$("#menu-nosotros").show();
+		});
+		$("#btn-scroll").click(function () {
+			$("#header-intro").addClass("header-background");
+			$("#intro").hide("slow");
+		});
+		var servicioTypeEnum = {
+			Matenimiento: 1,
+			Servicio: 2,
+			Ajustes: 3,
+			HojalateriaPintura: 4,
+			Modificaciones: 5,
+			Diagnostico: 6
+		};
+
+
+		function hideMenu() {
+			$("#menu-mobile").hide();
+		}
+		function setServicio(servicioType) {
+			var _modalCenterTitle;
+			var _modalCenterBody;
+			hideSection();
+			switch (servicioType) {
+				case servicioTypeEnum.Matenimiento:
+					_modalCenterTitle = "Mantenimiento";
+					_modalCenterBody = "Revisamos los niveles de aceite, líquidos de frenos, el estado de bujía, analizamos el kit de arrastre (cadena y estrellas) y revisión del sistema eléctrico.";
+					$("#modalCenterTitle").html(_modalCenterTitle);
+					$("#modalCenterBody").html(_modalCenterBody);
+					$("#section-servicio").show("slow");
+					break;
+				case servicioTypeEnum.Servicios:
+					$("#section-servicios").show("slow");
+					break;
+				case servicioTypeEnum.Servicio:
+					_modalCenterTitle = "Servicio";
+					_modalCenterBody = "Damos servicio de afinación, se hace limpieza en el carburador, cambio de bujías y el aceite, cambio de filtro y realizamos una revisión en general.";
+					$("#modalCenterTitle").html(_modalCenterTitle);
+					$("#modalCenterBody").html(_modalCenterBody);
+					$("#section-servicio").show("slow");
+					break;
+				case servicioTypeEnum.Ajustes:
+					_modalCenterTitle = "Ajustes";
+					_modalCenterBody = "Medio ajuste: el cuál incluye cambio de cilindro, pistón y anillo, cambio de válvulas, cambio de cadena o distribución y varillas. <br> Ajuste completo: el cual incluye el cambio de cilindro, pistón y anillo, cambio de válvulas, cambio de cadena o distribución cambio de varillas y cambio del cigueñal.";
+					$("#modalCenterTitle").html(_modalCenterTitle);
+					$("#modalCenterBody").html(_modalCenterBody);
+					$("#section-servicio").show("slow");
+					break;
+				case servicioTypeEnum.HojalateriaPintura:
+					_modalCenterTitle = "Hojalateria y Pintura";
+					_modalCenterBody = "Hacemos reparaciones de daños de cualquier magnitud, que van desde pequeños rayones y golpes hasta choques severos, también hacemos reparaciones con fibra de vidrio, pintado de cuadros y baños de pintura. Utilizamos las mejores pinturas, con ingredientes de alta calidad, que garantizan mayor protección. ";
+					$("#modalCenterTitle").html(_modalCenterTitle);
+					$("#modalCenterBody").html(_modalCenterBody);
+					$("#section-servicio").show("slow");
+					break;
+				case servicioTypeEnum.Modificaciones:
+					_modalCenterTitle = "Modificaciones";
+					_modalCenterBody = "Realizamos alargamiento de scooter, recorremos la llanta trasera, levantamos la moto, realizamos modificaciones para cualquier tipo de moto o marca, al gusto del cliente.";
+					$("#modalCenterTitle").html(_modalCenterTitle);
+					$("#modalCenterBody").html(_modalCenterBody);
+					$("#section-servicio").show("slow");
+					break;
+				case servicioTypeEnum.Diagnostico:
+					_modalCenterTitle = "Diagnostico";
+					_modalCenterBody = "Revisamos y diagnosticamos cualquier falla eléctrica y mecánica al momento.";
+					$("#modalCenterTitle").html(_modalCenterTitle);
+					$("#modalCenterBody").html(_modalCenterBody);
+					$("#section-servicio").show("slow");
+					break;
+
+			}
+
+
+		}
+
+		$("#btnMenuMap").click(function () {
+			hideSection();
+			$("#section-map").show("slow");
+		});
+		$("#btnMenuInicio").click(function () {
+			hideSection();
+			$("#section-main").show("slow");
+		});
+		$("#btnMenuVentas").click(function () {
+			hideSection();
+			$("#section-ventas").show("slow");
+		});
+		$("#btnMenuNosotros").click(function () {
+			hideSection();
+			$("#section-nostros").show("slow");
+		});
+		$("#btnMenuAccesorios").click(function () {
+			hideSection();
+			$("#section-accesorios").show("slow");
+		});
+		$("#btnMenuRefacciones").click(function () {
+			hideSection();
+			$("#section-refacciones").show("slow");
+		});
+		$("#btnMenuContactanos").click(function () {
+			hideSection();
+			$("#section-contactanos").show("slow");
+		});
+
+
+		function hideSection() {
+			$("#section-main").hide();
+			$("#section-ventas").hide();
+			$("#section-map").hide();
+			$("#section-servicios").hide();
+			$("#section-servicio").hide();
+			$("#section-nostros").hide();
+			$("#section-accesorios").hide();
+			$("#section-refacciones").hide();
+			$("#section-contactanos").hide();
+		}
+
+		$(function () {
+
+			causeRepaintsOn = $("h1, h2, h3, p");
+
+			$(window).resize(function () {
+				causeRepaintsOn.css("z-index", 1);
+			});
+
+		});
+
+	</script>
+
+</body>
+
+</html>
